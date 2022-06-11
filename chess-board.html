@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess board with Diagonals highlights</title> 
+        <style>
+            
+            body{
+                display: block;
+                margin: auto;
+                width: 500px;
+                margin-top:10px;
+            }
+
+            .square{
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                margin: 0px;
+                animation: fadeIn 1s;
+            }
+
+            #boardInner{
+                border: solid 1px black;
+                width: 200px;
+                height: 200px;
+                display: inline-flex;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+
+            .row{
+                display: flex;
+                width: 200px;
+                height: 25px;
+            }
+            .diagonalBGcolor{
+                background-color: #EC3323 !important;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="grid-col" id="boardInner"></div>
+        <script type="text/javascript" src="script.js" ></script>
+    </body>
+</html>
